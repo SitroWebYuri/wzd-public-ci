@@ -1,0 +1,13 @@
+name: Public Safety
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  public-safety:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 --version
+      - run: python3 WzD/homewerk-service/tools/public_safety_check.py
