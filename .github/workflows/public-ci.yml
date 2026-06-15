@@ -1,0 +1,16 @@
+name: Public CI
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  public-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 --version
+      - run: test -f README.md
+      - run: test -f NOTICE.md
+      - run: test -f PUBLIC_SYNC_MANIFEST.md
+      - run: echo public-ci-ok
