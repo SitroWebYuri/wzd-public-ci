@@ -1,0 +1,47 @@
+# Secrets and local configuration
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+private/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Node / frontend
+node_modules/
+dist/
+build/
+.next/
+
+# Generated files and private documents
+*.pdf
+*.zip
+*.7z
+*.rar
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.heic
+*.xlsx
+*.docx
+artifacts/
+exports/
+scans/
+photos/
+invoices/
+receipts/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
